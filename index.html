@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Questionário Salinha
+        </title>
+    </head>
+    <body>
+        <h1>Questionário Salinha</h1>
+        <form>
+            <div class="form-control">
+                <label for="name" >Nome</label>
+                <input 
+                    placeholder="Digite seu nome"
+                    type="text" 
+                    id="name"
+                />
+            </div>
+            <div class="form-control" >
+                <label for="email" >E-mail</label>
+                <input 
+                    placeholder="Digite seu e-mail" 
+                    type="email" 
+                    id="email"
+                />
+            </div>
+            <div class="form-control">
+                <label for="age" >Idade</label>
+                <input 
+                    placeholder="Digite sua idade" 
+                    type="number" 
+                    id="age"
+                />
+            </div>
+            <div class="form-control">
+                <label for="role">
+                    Qual opção descreve melhor você?
+                </label>
+                <select id="role">
+                    <option>Estudante</option>
+                    <option>Profissional</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>
+                    Você recomendaria a Salinha para um amigo?
+                </label>
+                <label for="recommed-1" class="horizontal-label">
+                    <input type="radio" name="recommed" id="recommed-1">Sim</input>
+                </label>
+                <label for="recommed-2" class="horizontal-label">
+                    <input type="radio" name="recommed" id="recommed-2">Não</input>
+                </label>
+                <label for="recommed-3" class="horizontal-label">
+                    <input type="radio" name="recommed" id="recommed-3">Talvez</input>
+                </label>
+            </div>
+            <div class="form-control">
+                <label>
+                    Linguagens e Frameworks que você conhece
+                    <small>(Marque todas que você se aplica)</small>
+                </label>
+                <label for="languages-1" class="horizontal-label">
+                    <input type="checkbox" name="languages" id="languages-1">HTML</input>
+                </label>
+                <label for="languages-2" class="horizontal-label">
+                    <input type="checkbox" name="languages" id="languages-2">CSS</input>
+                </label>
+                <label for="languages-3" class="horizontal-label">
+                    <input type="checkbox" name="languages" id="languages-3">JavaScript</input>
+                </label>
+                <label for="languages-4" class="horizontal-label">
+                    <input type="checkbox" name="languages" id="languages-4">Python</input>
+                </label>
+                <label for="languages-5" class="horizontal-label">
+                    <input type="checkbox" name="languages" id="languages-5">C#</input>
+                </label>
+            </div>
+            <div class="form-control">
+                <label for="comment">Algum comentário ou sugestão</label>
+                <textarea id="comment"></textarea>
+            </div>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+    </body>
+</html>
